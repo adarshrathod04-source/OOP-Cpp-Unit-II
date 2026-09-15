@@ -1,5 +1,5 @@
 #include <iostream>                     // Includes cout
-using namespace std;                    // Uses standard namespace
+using namespace std;                     // Uses standard namespace
 
 class Base                              // Base class
 {
