@@ -1,6 +1,6 @@
 #include <iostream>                     // Includes input/output
 using namespace std;                    // Uses standard namespace
-
+ 
 class Base                              // Defines Base class
 {
 public:
