@@ -1,6 +1,6 @@
 #include <iostream>                     // Includes cout
 using namespace std;                    // Uses standard namespace
-
+ 
 class Base                              // Base class
 {
 public:
