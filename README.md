@@ -26,201 +26,109 @@ This README contains the C++ programs for Unit II – Inheritance, based on the 
 
 List of Programs
 
-1. Basic Inheritance – Rectangle and Cuboid
+1.Basic Single Inheritance
 
-Demonstrates a base class Rectangle and derived class Cuboid. The derived class reuses length and breadth and adds height.
+Demonstrates single inheritance where a derived Student class inherits common data and functionality from the Person base class.
 
-Concept: Base class, derived class, inheritance, code reusability.
+2.Protected Member Access
+Demonstrates the use of the protected access specifier and shows how a derived class can access protected members of its base class..
 
-2. Constructor in Base and Derived Class
 
-Shows the order of constructor execution when a derived-class object is created. The base constructor executes before the derived constructor.
+3. Public vs Private Inheritance
 
-Concept: Constructors in inheritance.
+Demonstrates public and private inheritance modes and their effect on accessibility of inherited members.
 
-3. Parameterized Constructor
+4. Multilevel Inheritance
+Demonstrates a three-level inheritance hierarchy: Person → Employee → Manager
 
-Demonstrates passing values to constructors during object creation and initializing class data members.
 
-Concept: Parameterized constructors and initialization.
+5. Hierarchical Inheritance
 
-4. Derived Constructor Calling Base Constructor
+Demonstrates hierarchical inheritance where multiple derived classes, Car and Bike, inherit from the same Vehicle base class.
 
-Shows how a derived constructor calls a parameterized base constructor using a constructor initializer list.
+6. Multiple Inheritance
 
-Concept: Constructor chaining and initializer list.
+Demonstrates multiple inheritance where the Student class inherits from both Academic and Sports
 
-5. Function Overriding
+7. Multiple Inheritance Ambiguity
 
-Demonstrates a derived class providing its own implementation of a function already present in the base class.
+Demonstrates ambiguity caused by multiple inheritance and resolves it using the scope-resolution operator.
 
-Concept: Overriding member functions.
 
-6. Calling Base Function Using Scope Resolution
+8.Constructor and Destructor Order
 
-Shows how to call the original base-class version of an overridden function using Base::function().
+Demonstrates the order in which base and derived class constructors and destructors are executed.
 
-Concept: Scope-resolution operator and overriding.
+9. Parameterized Base Constructor
+   
+Demonstrates how a derived class calls a parameterized constructor of its base class using an initializer list.
 
-7. IS-A Relationship
 
-Demonstrates an inheritance-based relationship such as Car IS-A Vehicle.
+10. Function Overriding
+    
+Demonstrates function overriding using virtual functions and the override specifier.
 
-Concept: IS-A relationship.
+11. Abstract Class
 
-8. HAS-A Relationship
+Demonstrates an abstract base class containing a pure virtual function and its implementation in derived classes.
 
-Demonstrates object composition, such as a Car containing an Engine object.
+12.Virtual Base / Diamond Inheritance
 
-Concept: HAS-A relationship / composition.
+Demonstrates the diamond inheritance problem and the use of virtual inheritance to maintain a single shared base-class object.
 
-9. Single / Simple Inheritance
+13.Friend Class
 
-Shows one derived class inheriting from one base class, such as Person → Student.
+Demonstrates a friend class that is given special permission to access private members of another class
 
-Concept: Single inheritance.
+14.Nested Class
 
-10. Multilevel Inheritance
+Demonstrates a class defined inside another class and accessed using the outer class scope.
 
-Shows inheritance through multiple levels: Person → Employee → Manager.
+15. Vehicle Rental System
+    
+Mini-project demonstrating inheritance and runtime polymorphism through a vehicle rental system for cars and bikes
 
-Concept: Multilevel inheritance.
+16.Employee Payroll System
 
-11. Hierarchical Inheritance
+Mini-project demonstrating an abstract employee base class, function overriding, and polymorphic salary calculation for permanent and contract employees
+ 
+Learning Objectives
 
-Shows multiple derived classes inheriting from one common base class: Person → Student and Person → Teacher.
+This practical set covers important Object-Oriented Programming concepts related to inheritance, including:
 
-Concept: Hierarchical inheritance.
+Single inheritance
 
-12. Multiple Inheritance
+Protected members
 
-Shows one derived class inheriting from two base classes, such as Person + Employee → Teacher.
+Public and private inheritance
 
-Concept: Multiple inheritance.
+Multilevel inheritance
 
-13. Multiple Inheritance Ambiguity
+Hierarchical inheritance
 
-Demonstrates ambiguity when two base classes have functions with the same name. The ambiguity is resolved using the scope-resolution operator.
+Multiple inheritance
 
-Example: obj.Person::show();
+Multiple-inheritance ambiguity
 
-Concept: Multiple-inheritance ambiguity.
+Constructor and destructor order
 
-14. Multipath / Diamond Inheritance
+Parameterized base constructors
 
-Demonstrates the diamond problem, where a common base class is reached through two inheritance paths.
+Function overriding
 
-Concept: Multipath / diamond inheritance.
+Abstract classes and pure virtual functions
 
-15. Virtual Base Class
+Virtual base classes
 
-Uses virtual inheritance to ensure that only one shared copy of the common base class exists in a diamond hierarchy.
+Friend classes
 
-Example: class Teacher : virtual public Person
+Nested classes
 
-Concept: Virtual base class and diamond-problem solution.
+Runtime polymorphism
 
-16. Public Inheritance
+Inheritance-based mini-projects
 
-Demonstrates public inheritance and its effect on accessibility. Base public members remain public and protected members remain protected.
-
-Concept: Public inheritance and access control.
-
-17. Protected and Private Inheritance
-
-Demonstrates how protected and private inheritance change the accessibility of inherited public and protected members.
-
-Concept: Protected inheritance, private inheritance, access control.
-
-18. Abstract Class and Pure Virtual Function
-
-Demonstrates an abstract Shape class containing a pure virtual area() function, with Rectangle and Circle providing implementations.
-
-Important syntax:
-
-virtual void area() = 0;
-
-Concept: Abstract class, pure virtual function, overriding.
-
-Inheritance Type Summary
-
-Type                              Structure                           Example
-
-Single                             A → B                               Person → Student
-
-Multilevel                         A → B → C                           Person → Employee → Manager
-
-Hierarchical                      A → B, C                             Person → Student, Teacher
-
-Multiple                          A + B → C                            Person + Employee → Teacher
-
-Hybrid                           Combination of inheritance types      Combined hierarchy
-
-Multipath / Diamond              Common base through multiple paths    Person → Student/Teacher → School
-
-Important C++ Syntax
-
-Basic inheritance
-
-class Derived : public Base
-{
-};
-
-Protected inheritance
-
-class Derived : protected Base
-{
-};
-
-Private inheritance
-
-class Derived : private Base
-{
-};
-
-Virtual inheritance
-
-class Derived : virtual public Base
-{
-};
-
-Calling a base-class function
-
-Base::functionName();
-
-Pure virtual function
-
-virtual void functionName() = 0;
-
-
-Learning Outcomes
-
-After completing these programs, students should be able to:
-
-1.Explain inheritance and its purpose.
-
-2.Identify base and derived classes.
-
-3.Understand code reusability.
-
-4.Explain IS-A and HAS-A relationships.
-
-5.Implement different types of inheritance.
-
-6.Understand constructor execution in inheritance.
-
-7.Implement function overriding.
-
-8.Resolve ambiguity in multiple inheritance.
-
-9.Explain the diamond problem.
-
-10.Use virtual inheritance.
-
-11.Understand public, protected, and private inheritance.
-
-12.Explain abstract classes and pure virtual functions.
-
+ 
 
 Course Reference
 
