@@ -2,23 +2,23 @@
 
 Student Information
 
-Field                                                 Details
+                                            
 
-Student Name                                         Adarsh Rathod                                      
+Student Name   :                                      Adarsh Rathod                                      
 
-ZPRN                                                 125UAD1148
+ZPRN            :                                     125UAD1148
 
-Class / Division                                     SY-B.Tech / A
+Class / Division  :                                   SY-B.Tech / A
 
-Course Name                                         Object Oriented Programming with C++
+Course Name      :                                   Object Oriented Programming with C++
 
-Unit                                                Unit II – Inheritance
+Unit              :                                Unit II – Inheritance
 
-Academic Year                                       2026–27
+Academic Year     :                                  2026–27
 
-Department                                          AI & DS
+Department       :                                   AI & DS
 
-College                                            Zeal College of Engineering and Research, Narhe, Pune
+College          :                                  Zeal College of Engineering and Research, Narhe, Pune
 
 About the Unit
 
